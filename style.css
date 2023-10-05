@@ -42,8 +42,9 @@ Main
 ------------
 */
 main {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 135px);
   background-color: black;
+  overflow-y: scroll;
 }
 
 .container {
@@ -80,7 +81,36 @@ Footer
 */
 
 .bottom-bar {
+  color: white;
   background-color: #222222;
-  height: 50px;
   z-index: 999;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.bottom-left {
+  display: flex;
+  gap: 20px;
+}
+
+.elemento {
+  text-align: center;
+  padding: 10px 20px 10px 5px;
+  position: relative;
+}
+
+.elemento .icona {
+  font-size: 30px;
+}
+
+.elemento p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.elemento .freccia {
+  position: absolute;
+  font-size: 12px;
+  bottom: 25px;
+  right: 0;
 }
