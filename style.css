@@ -24,10 +24,11 @@ Header
 .top-bar {
   color: white;
   background-color: black;
+  height: 50px;
   display: flex;
   justify-content: right;
   gap: 10px;
-  padding: 10px 10px 30px 10px;
+  align-items: center;
 }
 
 .top-button {
@@ -42,9 +43,10 @@ Main
 ------------
 */
 main {
-  height: calc(100vh - 135px);
+  height: calc(100vh - 130px);
   background-color: black;
   overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -80,22 +82,10 @@ Footer
 ------------
 */
 
-.bottom-bar {
-  color: white;
-  background-color: #222222;
-  z-index: 999;
-  display: flex;
-  /* justify-content: space-between; */
-}
-
-.bottom-left {
-  display: flex;
-  gap: 20px;
-}
-
+/* footer-common */
 .elemento {
   text-align: center;
-  padding: 10px 20px 10px 5px;
+  padding: 20px 20px 12px 5px;
   position: relative;
 }
 
@@ -113,4 +103,44 @@ Footer
   font-size: 12px;
   bottom: 25px;
   right: 0;
+}
+
+.evidenz {
+  color: #4bc800;
+}
+
+/* End common */
+
+.bottom-bar {
+  color: white;
+  background-color: #222222;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Parte sx */
+.bottom-left {
+  display: flex;
+  gap: 20px;
+}
+
+/* Parte centrale */
+.bottom-center {
+  display: flex;
+  gap: 20px;
+}
+
+/* Parte dx */
+.bottom-right {
+  display: flex;
+  align-items: center;
+  background-color: #4a4a4a;
+  color: red;
+  padding: 0 10px 0 10px;
+}
+
+.elemento:hover {
+  background-color: #4a4a4a;
 }
