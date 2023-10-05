@@ -1,5 +1,51 @@
+/* 
+------------
+Reset 
+------------
+ */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* 
+------------
+Common
+------------
+ */
+
+/* 
+------------
+Header 
+------------
+*/
+.top-bar {
+  background-color: black;
+  height: 50px;
+  border: 1px solid yellow;
+}
+
+/* 
+------------
+Main
+------------
+*/
+
+.container {
+  border: 1px dashed purple;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.box {
+  border: 1px solid red;
+}
+
+.box img {
+  display: block;
 }
